@@ -20,11 +20,9 @@ const machine2Promise = new Promise(
 )
 
 Promise.all([machine1Promise, machine2Promise]).then(
-	console.log( "all:"+new Date() )
+	() => {console.log( "all:"+new Date() );}
 )
 
 
-//$('#switchCP').click(function() {
-//  var isChecked = $(this).find('input[type="checkbox"]').is(':checked');
-//  isChecked ?  $('.pro-weui-form-preview').removeClass("hide") : $('.pro-weui-form-preview').addClass("hide");
-//}
+
+
