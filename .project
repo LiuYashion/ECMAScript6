@@ -14,13 +14,6 @@
 	<natures>
 		<nature>com.aptana.projects.webnature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>react-redux-tutorial-master</name>
-			<type>2</type>
-			<location>F:/新建文件夹/react-redux-tutorial-master</location>
-		</link>
-	</linkedResources>
 	<filteredResources>
 		<filter>
 			<id>1484889685945</id>
