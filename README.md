@@ -4,4 +4,5 @@
 > [阮一峰的es6入门](http://es6.ruanyifeng.com/#docs/promise)
 
 ###本文链接###
+> Promise:
 > http://www.jianshu.com/p/231532f03f34
