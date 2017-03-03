@@ -13,7 +13,7 @@ Number.isNaN(NaN) // true
 Number.parseInt('12.34') // 12
 
 //转换成小数
-Number.parseFloat('123.45#') // 123.45
+Number.parseFloat('123.45#') // 123.45 
 
 //判断是否为整数
 Number.isInteger(3.0) //true
