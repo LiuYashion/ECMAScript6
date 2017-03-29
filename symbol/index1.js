@@ -69,6 +69,7 @@ function getComplement(color) {
 console.log( getComplement(COLOR_RED) )
 
 
+
 /**
  * {属性名的遍历}
  */
@@ -91,14 +92,20 @@ console.log( collection )	//{ EnumTrue: 'EnumTrue' }
 console.log( Object.getOwnPropertyNames(collection) )	//[ 'EnumTrue', 'EnumFalse' ]\n
 console.log( Object.getOwnPropertySymbols(collection) )	//[ Symbol(tag) ]
 console.log( Reflect.ownKeys(collection) )	//[ 'EnumTrue', 'EnumFalse', Symbol(tag) ]
-/*
- * hi,注意这里取出来的始终是Symbol('tag'),并非SymbolTag.这里为非私有的内部方法
- * SymbolTag并非collection私有,而且外部访问不到SymbolTag
- */
+//hi,注意这里取出来的始终是Symbol('tag'),并非SymbolTag.这里为非私有的内部方法
+//SymbolTag并非collection私有,而且外部访问不到SymbolTag
+
 
 /**
- * {内部私有方法}
+ * {返回同一个symbol值}
  */
+var s1 = Symbol.for("September");
+var s2 = Symbol.for("September")
+
+console.log( Symbol.keyFor(s1) )	//September
+console.log(s1 == s2)	//true
+
+// Symbol.for()相当于会给
 
 
 
@@ -107,5 +114,4 @@ console.log( Reflect.ownKeys(collection) )	//[ 'EnumTrue', 'EnumFalse', Symbol(t
 
 
 
-
-
+ 
