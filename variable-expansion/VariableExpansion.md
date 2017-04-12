@@ -1,25 +1,15 @@
 
 
+# [String](#String) [Array](#Array) [String](#String)
 
 
-# [String](#String)
-
----
-
-# String
-#### concat
-```javascript
-
-
-
-# String
+## String
 
 #### concat
 ```javascript
 var firstName = 'Jennifer'
 var lastName = ' Lawrence'
 var holeName = firstName.concat(lastName);
-
 // "Jennifer Lawrence"
 ```
 
@@ -50,7 +40,6 @@ var result = str.slice(3,7);
 // [)
 ```
 
-
 #### indexOf    lastIndexOf
 ```javascript
 var str = "hello world";
@@ -59,7 +48,6 @@ var result2 = str.lastIndexOf("o")    //  7
 var result3 = str.indexOf("o",6)      //  7
 var result4 = str.lastIndexOf("o",6)  //  4
 ```
-
 
 #### trim
 ```javascript
@@ -123,3 +111,8 @@ var pad3 = "x".padEnd(5, 'ab') 	// 'xabab'
 var pad4 = "x".padEnd(4, 'ab') 	// 'xaba'
 // 尾部补全
 ```
+
+---
+
+
+## Array
