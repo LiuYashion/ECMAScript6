@@ -2,38 +2,38 @@
 "use strict"
 
 //	concat()
-var str="hello ";      
+var str="hello ";
 var res=str.concat("world");
 
 //	slice() substring() substr()
-var str="hello world";         
-console.log(str.slice(3,7));			//	lo w  
-console.log(str.substring(3,7));	//	lo w      
-console.log(str.substr(3,7));			//	lo worl    
+var str="hello world";
+console.log(str.slice(3,7));			//	lo w
+console.log(str.substring(3,7));	//	lo w
+console.log(str.substr(3,7));			//	lo worl
 
 //	indexOf() lastIndexOf()反向查询
-var str="hello world";      
-console.log(str.indexOf("o"));				//	4      
-console.log(str.lastIndexOf("o"));		//	7      
-console.log(str.indexOf("o",6));			//	7      
+var str="hello world";
+console.log(str.indexOf("o"));				//	4
+console.log(str.lastIndexOf("o"));		//	7
+console.log(str.indexOf("o",6));			//	7
 console.log(str.lastIndexOf("o",6));	//	4
 
 //	trim()
-var str="   hello world   ";      
+var str="   hello world   ";
 console.log( str.trim() );	// hello world
 
 //	replace()
-var str="cat,bat,sat,fat";      
-var res=str.replace("at","one");//第一个参数是字符串，所以只会替换第一个子字符串      
-console.log(res);//cone,bat,sat,fat    
+var str="cat,bat,sat,fat";
+var res=str.replace("at","one");//第一个参数是字符串，所以只会替换第一个子字符串
+console.log(res);//cone,bat,sat,fat
 
-var res1=str.replace(/at/g,"one");//第一个参数是正则表达式，所以会替换所有的子字符串      
+var res1=str.replace(/at/g,"one");//第一个参数是正则表达式，所以会替换所有的子字符串
 console.log(res1);//cone,bone,sone,fone
 
 //	split()
-var str="red,blue,green,yellow";      
-console.log(str.split(","));			//	["red", "blue", "green", "yellow"]      
-console.log(str.split(",",2));		//	["red", "blue"]  第二个参数用来限制数组大小      
+var str="red,blue,green,yellow";
+console.log(str.split(","));			//	["red", "blue", "green", "yellow"]
+console.log(str.split(",",2));		//	["red", "blue"]  第二个参数用来限制数组大小
 
 //	join
 var arr = ["A","B","C","D"]
@@ -42,7 +42,7 @@ console.log(arr.join("->"));
 /////////
 
 //	遍历字符串
-for (let codePoint of 'foo') {
+for (let codePoint of 'key') {
   console.log(codePoint)
 }
 
@@ -70,7 +70,3 @@ var pad4 = "x".padEnd(4, 'ab') 	// 'xaba'
 var name = "Bob", time = "today";
 var stringTemplate = `Hello ${name}, how are you ${time}?`
 console.log( stringTemplate )
-
-
-
-

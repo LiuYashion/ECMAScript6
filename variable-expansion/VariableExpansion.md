@@ -96,7 +96,8 @@ s.includes('Hello', 6)    // false
 
 #### at
 ```javascript
-var result = 'abc'.charAt(0) // b
+var result = 'abc'.charAt(0)
+// b
 ```
 
 #### padStart padEnd
