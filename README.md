@@ -1,3 +1,17 @@
+
+
+
+
+# [String](#String)
+
+---
+
+# String
+#### concat
+```javascript
+
+
+
 # String
 
 #### concat
