@@ -1,11 +1,11 @@
 
 
-# [String](#String) [Array](#Array) 
+# [String](#String) [Array](#Array)
 
 
-## String
+> # String
 
-#### concat
+#### String.concat( string )
 ```javascript
 var firstName = 'Jennifer'
 var lastName = ' Lawrence'
@@ -13,7 +13,7 @@ var holeName = firstName.concat(lastName);
 // "Jennifer Lawrence"
 ```
 
-#### slice
+#### String.slice( from, end )
 ```javascript
 var str = "hello world";
 var result = str.slice(3,7);			
@@ -22,7 +22,7 @@ var result = str.slice(3,7);
 // [)
 ```
 
-#### substring
+#### String.substring( from, end )
 ```javascript
 var str = "hello world";
 var result = str.slice(7,3);			
@@ -31,7 +31,7 @@ var result = str.slice(7,3);
 // [)
 ```
 
-#### substr
+#### String.substr( from, end )
 ```javascript
 var str = "hello world";
 var result = str.slice(3,7);			
@@ -40,7 +40,8 @@ var result = str.slice(3,7);
 // [)
 ```
 
-#### indexOf    lastIndexOf
+#### String.indexOf( item, from )    
+#### String.lastIndexOf( item, from )
 ```javascript
 var str = "hello world";
 var result1 = str.indexOf("o")        //  4
@@ -49,14 +50,14 @@ var result3 = str.indexOf("o",6)      //  7
 var result4 = str.lastIndexOf("o",6)  //  4
 ```
 
-#### trim
+#### String.trim()
 ```javascript
 var str = "   hello world   ";
 var result = str.trim()
 // hello world
 ```
 
-#### replace
+#### String.replace( str1, str2 )
 ```javascript
 var str = "cat,bat,sat,fat";
 var result = str.replace("at","one");			
@@ -64,7 +65,7 @@ var result = str.replace("at","one");
 //  只替换第一个
 ```
 
-#### split
+#### String.split( string )
 ```javascript
 var str = "red,blue,green,yellow";      
 var res1 = str.split(",")		
@@ -74,7 +75,7 @@ var res2 = str.split(",", 2);
 
 ```
 
-#### join
+#### String.join( string )
 ```javascript
 var arr = ["A", "B", "C", "D"]
 var result = arr.join("->")		
@@ -88,7 +89,9 @@ for (let codePoint of 'foo') {
 }
 ```
 
-#### startsWith endsWith includes
+#### String.startsWith( str, from )
+#### String.endsWith( str, from )
+#### String.includes( str, from )
 ```javascript
 var s = 'Hello world!';
 s.startsWith('world', 6)  // true
@@ -96,12 +99,13 @@ s.endsWith('Hello', 5)    // true
 s.includes('Hello', 6)    // false
 ```
 
-#### at
+#### String.charAt( index )
 ```javascript
 var result = 'abc'.charAt(0) // b
 ```
 
-#### padStart padEnd
+#### String.padStart( length, string )
+#### String.padEnd( length, string )
 ```javascript
 var pad1 = "x".padStart(5, 'ab') 	// 'ababx'
 var pad2 = "x".padStart(4, 'ab') 	// 'abax'
@@ -112,11 +116,9 @@ var pad4 = "x".padEnd(4, 'ab') 	// 'xaba'
 // 尾部补全
 ```
 
----
+---------------------------------------------------------------------
 
-
-
-## Array
+> # Array
 
 ```javascript
 let arrayLike = {
