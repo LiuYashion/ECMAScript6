@@ -8,7 +8,7 @@ var people = {name}
 function f(name, locate){
 	return {name, locate}
 }
-f("LiuYashion","Shenzhen") 
+f("LiuYashion","Shenzhen")
 // { name:"LiuYashion", locate:"ShenZhen" }
 
 
@@ -63,7 +63,7 @@ Object.is(NaN, NaN) // true
 
 var people 	= { name:'Liu' }
 var age 	= { age:20 }
-var locate 	= { 
+var locate 	= {
 	domicile:'ShenZhen',
 	home:{
 		province:'Hubei',
@@ -73,7 +73,7 @@ var locate 	= {
 
 
 
-var people = Object.assign(people, age, locate)	
+var people = Object.assign(people, age, locate)
 Object.defineProperty(people, 'invisible', {
     enumerable: false,
     value: 'hello'
@@ -81,10 +81,10 @@ Object.defineProperty(people, 'invisible', {
 
 //遍历对象的属性
 
-console.log( Object.keys(people) ) 
+console.log( Object.keys(people) )
 //[ 'name', 'age', 'domicile', 'home' ]
 
-console.log( Object.getOwnPropertyNames(people) ) 
+console.log( Object.getOwnPropertyNames(people) )
 //[ 'name', 'age', 'domicile', 'home', 'invisible' ]
 
 
@@ -93,20 +93,21 @@ console.log( Object.getOwnPropertyNames(people) )
 
 
 
-//Object.assign方法实行的是浅拷贝，而不是深拷贝。也就是说，如果源对象某个属性的值是对象，那么目标对象拷贝得到的是这个对象的引用。
+//Object.assign方法实行的是浅拷贝，而不是深拷贝。
+//也就是说，如果源对象某个属性的值是对象，那么目标对象拷贝得到的是这个对象的引用。
 //locate.home.city改变,people里的键值也改变
 locate.home.city = 'XiaoXiTa'
 console.log(people)
 
 /*
-	{ 	
+	{
 		name: 'Liu',
 		age: 20,
 		domicile: 'ShenZhen',
-		home: { 
-			province: 'Hubei', 
-			city: 'YiChang' 
-		} 
+		home: {
+			province: 'Hubei',
+			city: 'YiChang'
+		}
 	}
  */
 //这里是整合对象
@@ -177,44 +178,3 @@ var student = {
 
 const result = student?.name
 console.log(result)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
