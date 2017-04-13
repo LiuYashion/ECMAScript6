@@ -5,19 +5,19 @@ let arrayLike = {
     '1': 'b',
     '2': 'c',
     '3': 'd',
-    length: 4  
+    length: 4
 };
 
 //	Array.from()
 let arr1 = Array.from(arrayLike); // ['a', 'b', 'c']
-// 类数组、可遍历 对象(arguments selector返回的对象)转成数组 
+// 类数组、可遍历 对象(arguments selector返回的对象)转成数组
 
 var arr2 = Array.from([1, 2, 3], (x)=>x*x)
 // 等同于Array.from(arrayLike).map(x => x * x);
 
 // Array.of()
 var arr3 = Array.of(3, 11, 8) 	// [3,11,8]
-var arr4 = Array.of(3) 			// [3]
+var arr4 = Array.of(3) 			    // [3]
 var arr5 = Array.of(3).length 	// 1
 
 
@@ -84,53 +84,3 @@ console.log(arr14)
 // toString方法
 var arr15 = [,'a',undefined,null].toString() // ",a,,"
 console.log(arr15)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
