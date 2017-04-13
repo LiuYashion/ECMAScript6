@@ -1,6 +1,6 @@
 
 
-# [String](#String) [Array](#Array)
+# [String](#string) [Array](#array)
 
 
 # String
