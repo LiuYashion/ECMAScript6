@@ -3,7 +3,7 @@
 # [String](#String) [Array](#Array)
 
 
-> # String
+# String
 
 #### String.concat( string )
 ```javascript
@@ -118,7 +118,7 @@ var pad4 = "x".padEnd(4, 'ab') 	// 'xaba'
 
 ---------------------------------------------------------------------
 
-> # Array
+# Array
 
 ```javascript
 let arrayLike = {
